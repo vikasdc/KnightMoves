@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"/>
+    <title>Knight Moves</title>
+  <style>
+    .col-1:hover {
+        cursor: grab;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="mt-5 container">
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <div class="chess mb-5 border shadow-sm py-4">
+                    <h3 class="h3 mb-4 mx-3 text-center">Click on any square to find possible Knight Moves.</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-1  bg-light text-center shadow p-2 a8" onclick="chess('a8')">a8</div>
+                        <div class="col-1  bg-dark text-white  text-center shadow p-2 b8" onclick="chess('b8')">b8</div>
+                        <div class="col-1  bg-light text-center shadow p-2 c8" onclick="chess('c8')">c8</div>
+                        <div class="col-1  bg-dark text-white  text-center shadow p-2 d8" onclick="chess('d8')">d8</div>
+                        <div class="col-1  bg-light text-center shadow p-2 e8" onclick="chess('e8')">e8</div>
+                        <div class="col-1  bg-dark text-white  text-center shadow p-2 f8" onclick="chess('f8')">f8</div>
+                        <div class="col-1  bg-light text-center shadow p-2 g8" onclick="chess('g8')">g8</div>
+                        <div class="col-1  bg-dark text-white  text-center shadow p-2 hh8" onclick="chess('hh8')">h8</div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 a7" onclick="chess('a7')">a7</div>
+                        <div class="col-1  bg-light text-center shadow p-2 b7" onclick="chess('b7')">b7</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 c7" onclick="chess('c7')">c7</div>
+                        <div class="col-1  bg-light text-center shadow p-2 d7" onclick="chess('d7')">d7</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 e7" onclick="chess('e7')">e7</div>
+                        <div class="col-1  bg-light text-center shadow p-2 f7" onclick="chess('f7')">f7</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 g7" onclick="chess('g7')">g7</div>
+                        <div class="col-1  bg-light text-center shadow p-2 hh7" onclick="chess('hh7')">h7</div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-1  bg-light text-center shadow p-2 a6" onclick="chess('a6')">a6</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 b6" onclick="chess('b6')">b6</div>
+                        <div class="col-1  bg-light text-center shadow p-2 c6" onclick="chess('c6')">c6</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 d6" onclick="chess('d6')">d6</div>
+                        <div class="col-1  bg-light text-center shadow p-2 e6" onclick="chess('e6')">e6</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 f6" onclick="chess('f6')">f6</div>
+                        <div class="col-1  bg-light text-center shadow p-2 g6" onclick="chess('g6')">g6</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 hh6" onclick="chess('hh6')">h6</div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 a5" onclick="chess('a5')">a5</div>
+                        <div class="col-1  bg-light text-center shadow p-2 b5" onclick="chess('b5')">b5</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 c5" onclick="chess('c5')">c5</div>
+                        <div class="col-1  bg-light text-center shadow p-2 d5" onclick="chess('d5')">d5</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 e5" onclick="chess('e5')">e5</div>
+                        <div class="col-1  bg-light text-center shadow p-2 f5" onclick="chess('f5')">f5</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 g5" onclick="chess('g5')">g5</div>
+                        <div class="col-1  bg-light text-center shadow p-2 hh5" onclick="chess('hh5')">h5</div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-1  bg-light text-center shadow p-2 a4" onclick="chess('a4')">a4</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 b4" onclick="chess('b4')">b4</div>
+                        <div class="col-1  bg-light text-center shadow p-2 c4" onclick="chess('c4')">c4</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 d4" onclick="chess('d4')">d4</div>
+                        <div class="col-1  bg-light text-center shadow p-2 e4" onclick="chess('e4')">e4</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 f4" onclick="chess('f4')">f4</div>
+                        <div class="col-1  bg-light text-center shadow p-2 g4" onclick="chess('g4')">g4</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 hh4" onclick="chess('hh4')">h4</div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 a3" onclick="chess('a3')">a3</div>
+                        <div class="col-1  bg-light text-center shadow p-2 b3" onclick="chess('b3')">b3</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 c3" onclick="chess('c3')">c3</div>
+                        <div class="col-1  bg-light text-center shadow p-2 d3" onclick="chess('d3')">d3</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 e3" onclick="chess('e3')">e3</div>
+                        <div class="col-1  bg-light text-center shadow p-2 f3" onclick="chess('f3')">f3</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 g3" onclick="chess('g3')">g3</div>
+                        <div class="col-1  bg-light text-center shadow p-2 hh3" onclick="chess('hh3')">h3</div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-1  bg-light text-center shadow p-2 a2" onclick="chess('a2')">a2</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 b2" onclick="chess('b2')">b2</div>
+                        <div class="col-1  bg-light text-center shadow p-2 c2" onclick="chess('c2')">c2</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 d2" onclick="chess('d2')">d2</div>
+                        <div class="col-1  bg-light text-center shadow p-2 e2" onclick="chess('e2')">e2</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 f2" onclick="chess('f2')">f2</div>
+                        <div class="col-1  bg-light text-center shadow p-2 g2" onclick="chess('g2')">g2</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 hh2" onclick="chess('hh2')">h2</div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 a1" id="a1" onclick="chess('a1')">a1</div>
+                        <div class="col-1  bg-light text-center shadow p-2 b1" onclick="chess('b1')">b1</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 c1" onclick="chess('c1')">c1</div>
+                        <div class="col-1  bg-light text-center shadow p-2 d1" onclick="chess('d1')">d1</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 e1" onclick="chess('e1')">e1</div>
+                        <div class="col-1  bg-light text-center shadow p-2 f1" onclick="chess('f1')">f1</div>
+                        <div class="col-1  bg-dark text-white text-center shadow p-2 g1" onclick="chess('g1')">g1</div>
+                        <div class="col-1  bg-light text-center shadow p-2 hh1" onclick="chess('hh1')">h1</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div id="output" class="display-4 text-center text-success"></div>
+                  </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function chessKnight(pos) {
+            pos = pos[1]-1 + ("ABCDEFGH".indexOf(pos[0].toUpperCase()) << 4); // Convert
+
+            return [-0x12, -0x21, -0x1F, -0x0E, 0x12, 0x21, 0x1F, 0x0E] // All relative moves
+                .map(i => pos+i) // Add to current position
+                .filter(i => !(i & 0x88)) // Detect under/overflow, i.e. off-the-board
+                .map(i => "ABCDEFGH"[i>>4] + ((i & 7)+1)); // Convert to output format
+            }
+            const output = document.getElementById("output");
+            function chess(element){
+                let knight = document.getElementsByClassName(element)[0].innerText
+                const moves = chessKnight(knight);
+                output.textContent = `${moves.length} possible moves for Knight: ${moves}`;
+            }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
